@@ -7,6 +7,7 @@ void T_Num();
 
 int Tr_Num()
 {
+    void T_Num();
     //文件读取，把原来的ios::out改成ios::in 
     fstream f;
     system("attrib -h -s -r Num.txt");
@@ -18,7 +19,7 @@ int Tr_Num()
     int sa = stoi(s);
 	f.close();
     //返回储存的随机数
-    int sb = sa;
+    int sb = sa - 114514 + 1919810;
     system("attrib +h +s +r Num.txt");
     return sb;
 }

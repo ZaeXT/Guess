@@ -13,7 +13,7 @@ void T_num()
     //1、系统生成随机数
     int num = rand() % 100 + 1; //生成 0 + 1 ~ 99 + 1 随机数
     //cout << num << endl;
-    int numR = num;
+    int numR = num + 114514 - 1919810;
     //2、系统创建.txt文件储存随机数
     system("echo xxx>./Num.txt");
     fstream f;
