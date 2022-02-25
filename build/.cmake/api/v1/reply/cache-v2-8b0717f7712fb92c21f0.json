@@ -30,18 +30,6 @@
 			"value" : "2.4"
 		},
 		{
-			"name" : "CMAKE_BUILD_TYPE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "STRING",
-			"value" : "MinSizeRel"
-		},
-		{
 			"name" : "CMAKE_CACHEFILE_DIR",
 			"properties" : 
 			[
