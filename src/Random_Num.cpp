@@ -15,11 +15,11 @@ void T_num()
     //cout << num << endl;
     int numR = num + 114514 - 1919810;
     //2、系统创建.txt文件储存随机数
-    system("echo xxx>./Num.txt");
+    system("echo xxx>Num.txt");
     fstream f;
 	f.open("Num.txt",ios::out);
 	//输入你想写入的内容 
 	f<< numR <<endl;
 	f.close();
-    system("attrib +h +s +r Num.txt");
+//    system("attrib +h +s +r Num.txt");
 }
