@@ -18,7 +18,7 @@ int Tr_Num()
     int sa = stoi(s);
 	f.close();
     //返回储存的随机数
-    int sb = sa - 114514 + 1919810;
+    int sb = sa;
     system("attrib +h +s +r Num.txt");
     return sb;
 }
