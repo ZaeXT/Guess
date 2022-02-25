@@ -1,4 +1,6 @@
 #include <iostream>
+//包含文件存储头文件
+#include <fstream>
 //time系统时间头文件包含
 #include <ctime>
 using namespace std;
@@ -12,4 +14,11 @@ int T_num()
     int num = rand() % 100 + 1; //生成 0 + 1 ~ 99 + 1 随机数
     //cout << num << endl;
     return num;
+    //2、系统创建.txt文件储存随机数
+    system("echo xxx>./Num.txt");
+    fstream f;
+	f.open("Num.txt",ios::out);
+	//输入你想写入的内容 
+	f<< num <<endl;
+	f.close();
 }

@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int T_num();
-
 int Tr_Num();
 
 int main()
 {
 
-    Tr_Num();
+    int num = Tr_Num();
 //         // 2、玩家进行猜测
 //         int val = 0; //玩家输入的数字
 //         int t = 0;
