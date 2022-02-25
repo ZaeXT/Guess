@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.31.31103/bin/Hostx86/x64/lib.exe"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x64/lib.exe"
 		},
 		{
 			"name" : "CMAKE_BACKWARDS_COMPATIBILITY",
@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/Guess/build"
+			"value" : "e:/Guess-Elder/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "host=x86"
+			"value" : "host=x64"
 		},
 		{
 			"name" : "CMAKE_HOME_DIRECTORY",
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Guess"
+			"value" : "E:/Guess-Elder"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -519,7 +519,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.31.31103/bin/Hostx86/x64/link.exe"
+			"value" : "C:/Program Files/Microsoft Visual Studio/2022/Preview/VC/Tools/MSVC/14.31.31103/bin/Hostx64/x64/link.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -615,7 +615,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Windows Kits/10/bin/10.0.22000.0/x86/mt.exe"
+			"value" : "E:/Windows Kits/10/bin/10.0.22000.0/x64/mt.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -703,7 +703,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Windows Kits/10/bin/10.0.22000.0/x86/rc.exe"
+			"value" : "E:/Windows Kits/10/bin/10.0.22000.0/x64/rc.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1051,7 +1051,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/Guess/build"
+			"value" : "E:/Guess-Elder/build"
 		},
 		{
 			"name" : "main_IS_TOP_LEVEL",
@@ -1075,7 +1075,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/Guess"
+			"value" : "E:/Guess-Elder"
 		}
 	],
 	"kind" : "cache",

@@ -1,4 +1,4 @@
-project(main)
+project(Elder)
 
 aux_source_directory(./src SRCS)
 

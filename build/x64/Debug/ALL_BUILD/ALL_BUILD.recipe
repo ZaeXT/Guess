@@ -2,10 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\Guess\build\x64\MinSizeRel\ZERO_CHECK</FullPath>
+      <FullPath>E:\Guess-Elder\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>E:\Guess\build\MinSizeRel\main.exe</FullPath>
+      <FullPath>E:\Guess-Elder\build\Debug\main.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\Guess-Elder\build\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
