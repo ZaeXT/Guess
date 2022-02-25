@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-int T_Num();
+void T_Num();
 
 int Tr_Num()
 {
