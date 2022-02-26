@@ -3,94 +3,97 @@ using namespace std;
 
 int Tr_Num();
 
+void Start_Text();
+
+void HelpMore();
+
 int main()
 {
-
+START:
     int num = Tr_Num();
-    cout << num << endl;
-    //         // 2、玩家进行猜测
-    //         int val = 0; //玩家输入的数字
-    //         int t = 0;
-    //         cout << "这是一个猜数字的应用程序" << endl;
-    //         cout << "首先，系统生成一个随机数(生成范围为1 ~ 100)" << endl;
-    //         cout << "然后，让玩家猜测正确数字" << endl;
-    //         cout << "玩家只有10次猜测机会" << endl;
-    //         cout << "机会用完后游戏结束" << endl;
-    //         cout << "您能否在有限的次数内猜出正确答案呢？" << endl;
-    //         cout << "输入 START 开始游戏" << endl;
-    //         string start = "YES";
+    //cout << num << endl;
+    // 2、玩家进行猜测
+    int val = 0; //玩家输入的数字
+    int t = 0;
+    Start_Text();
+    string start = "YES";
 
-    //         cin >> start;
-    //         if (start == "START")
-    //         {
-    //             while (t < 10)
-    //             {
-    //                 t = ++t;
-    //                 cout << "请输入您的答案:" << endl;
-    //                 cin >> val;
+    cin >> start;
+    if (start == "START")
+    {
+        while (t < 10)
+        {
+            t = ++t;
+            cout << "请输入您的答案:" << endl;
+            cin >> val;
 
-    //                 // 3、判断玩家的猜测
-    //                 if (val > num)
-    //                 {
-    //                     cout << "猜测过大" << endl;
-    //                 }
-    //                 else if (val < num)
-    //                 {
-    //                     cout << "猜测过小" << endl;
-    //                 }
-    //                 else
-    //                 {
-    //                     cout << "恭喜您猜对了!" << endl;
+            // 3、判断玩家的猜测
+            if (val > num)
+            {
+                cout << "猜测过大" << endl;
+            }
+            else if (val < num)
+            {
+                cout << "猜测过小" << endl;
+            }
+            else
+            {
+                cout << "恭喜您猜对了!" << endl;
 
-    //                     system("pause");
-    //                 Err_end_choice:
-    //                 system("cls");
+                system("pause");
+            }
+            Err_end_choice:
+            system("cls");
 
-    //                 cout << "输入 RESTART 重新开始或输入 END 结束游戏" << endl;
+            cout << "输入 RESTART 重新开始或输入 END 结束游戏" << endl;
 
-    //                 string end_choice = "????";
-    //                 cin >> end_choice;
+            string end_choice = "????";
+            cin >> end_choice;
 
-    //                 if (end_choice == "RESTART")
-    //                 {
-    //                     system("cls");
-    //                     restart1();
-    //                 }
-    //                 else if (end_choice == "END")
-    //                 {
-    //                     goto END;
-    //                 }
-    //                 else
-    //                 {
-    //                     system("cls");
-    //                     cout << "错误，请重新输入！" << endl;
-    //                     cin.get();
-    //                     cin.get();
-    //                     goto Err_end_choice;
-    //                 }
+            if (end_choice == "RESTART")
+            {
+                system("cls");
+            }
+            else if (end_choice == "END")
+            {
+                //goto END;
+            }
+            else
+            {
+                system("cls");
+                cout << "错误，请重新输入！" << endl;
+                cin.get();
+                cin.get();
+                goto Err_end_choice;
+            }
 
-    //                 //猜对  退出游戏
-    //                 break; //break在循环中，可以利用该关键字退出当前循环
-    //             }
+            //猜对  退出游戏
+            break; //break在循环中，可以利用该关键字退出当前循环
+        }
 
-    //             if (t == 5 )
-    //             {
-    //                 cout << "您可以输入 114514 获取提示！\n";
-    //             }
-    //             if (t > 5)
-    //             {
-    //                 if (val == 114514)
-    //                 {
-    //                     int chs = Help(num);
-    //                     // if (chs == 0)
-    //                     // {
-    //                     //     goto ENDLESS;
-    //                     // }
-    //                     // ENDLESS:
-    //                     // break;
-    //                 }
-    //             }
-    //         }
+        if (t == 5 )
+        {
+            cout << "您可以输入 114514 获取提示！\n";
+        }
+        if (t > 5)
+        {
+            if (val == 114514)
+            {
+                //int chs = Help(num);
+                // if (chs == 0)
+                // {
+                //     goto ENDLESS;
+                // }
+                // ENDLESS:
+                // break;
+            }
+        }
+    }
+    else if(start == "HelpMore")
+    {
+        HelpMore();
+        goto START;
+    }
     //         cout << "挑战失败！" << endl;
     //         system("pause");
     //         system("cls");

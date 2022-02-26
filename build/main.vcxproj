@@ -305,7 +305,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="E:\Guess-Main\src\Help-More.cpp" />
     <ClCompile Include="E:\Guess-Main\src\Random_Num.cpp" />
+    <ClCompile Include="E:\Guess-Main\src\Start_Text.cpp" />
     <ClCompile Include="E:\Guess-Main\src\Ture_Num.cpp" />
     <ClCompile Include="E:\Guess-Main\src\main.cpp" />
   </ItemGroup>

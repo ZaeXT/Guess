@@ -7,20 +7,24 @@ void T_Num();
 
 int Tr_Num()
 {
-    void T_Num();
-    //ÎÄ¼þ¶ÁÈ¡£¬°ÑÔ­À´µÄios::out¸Ä³Éios::in 
+    T_Num();
+    //cout << "T_Numå‡½æ•°è¿è¡ŒæˆåŠŸï¼" << endl;
+    //system("pause");
+    //cin.get();
+    //æ–‡ä»¶è¯»å–ï¼ŒæŠŠåŽŸæ¥çš„ios::outæ”¹æˆios::in 
     fstream f;
-//    system("attrib -h -s -r Num.txt");
-    f.open("Num.txt",ios::in);
+    system("attrib -h -s -r Num-By-Guess.txt");
+    f.open("Num-By-Guess.txt",ios::in);
 	string s;
-	//Ò»Ö±¶Áµ½ÎÄ¼þÄ©Î² 
+	//ä¸€ç›´è¯»åˆ°æ–‡ä»¶æœ«å°¾ 
 	while(f>>s)
+    cout << "éšæœºæ•°ç”ŸæˆæˆåŠŸï¼ŒRaw:";
     cout << s << endl;
     int sa = stoi(s);
 	f.close();
-    //·µ»Ø´¢´æµÄËæ»úÊý
+    //è¿”å›žå‚¨å­˜çš„éšæœºæ•°
     int sb = sa - 114514 + 1919810;
-//    system("attrib +h +s +r Num.txt");
+    system("attrib +h +s +r Num-By-Guess.txt");
+    system("cls");
     return sb;
 }
-

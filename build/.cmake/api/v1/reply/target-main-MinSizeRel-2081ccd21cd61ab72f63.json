@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Release/main.exe"
+			"path" : "MinSizeRel/main.exe"
 		},
 		{
-			"path" : "Release/main.pdb"
+			"path" : "MinSizeRel/main.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG"
 				}
 			],
 			"language" : "CXX",
@@ -46,7 +46,9 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -62,7 +64,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -91,7 +93,9 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -100,7 +104,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/Help-More.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/Random_Num.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Start_Text.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

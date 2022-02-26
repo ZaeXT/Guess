@@ -1,25 +1,34 @@
 #include <iostream>
-//°üº¬ÎÄ¼ş´æ´¢Í·ÎÄ¼ş
+//åŒ…å«æ–‡ä»¶å­˜å‚¨å¤´æ–‡ä»¶
 #include <fstream>
-//timeÏµÍ³Ê±¼äÍ·ÎÄ¼ş°üº¬
+//timeç³»ç»Ÿæ—¶é—´å¤´æ–‡ä»¶åŒ…å«
 #include <ctime>
 using namespace std;
 
-void T_num()
+void T_Num()
 {
-    //Ìí¼ÓËæ»úÊıÖÖ×Ó ×÷ÓÃ£ºÀûÓÃµ±Ç°ÏµÍ³Ê±¼äÉú³ÉËæ»úÊı£¬·ÀÖ¹Ã¿´ÎËæ»úÊı¶¼Ò»Ñù
+
+    //æ·»åŠ éšæœºæ•°ç§å­ ä½œç”¨ï¼šåˆ©ç”¨å½“å‰ç³»ç»Ÿæ—¶é—´ç”Ÿæˆéšæœºæ•°ï¼Œé˜²æ­¢æ¯æ¬¡éšæœºæ•°éƒ½ä¸€æ ·
     srand((unsigned int)time(NULL));
 
-    //1¡¢ÏµÍ³Éú³ÉËæ»úÊı
-    int num = rand() % 100 + 1; //Éú³É 0 + 1 ~ 99 + 1 Ëæ»úÊı
+    //1ã€ç³»ç»Ÿç”Ÿæˆéšæœºæ•°
+    int num = rand() % 100 + 1; //ç”Ÿæˆ 0 + 1 ~ 99 + 1 éšæœºæ•°
     //cout << num << endl;
     int numR = num + 114514 - 1919810;
-    //2¡¢ÏµÍ³´´½¨.txtÎÄ¼ş´¢´æËæ»úÊı
-    system("echo xxx>Num.txt");
+    //cout << "ç”Ÿæˆéšæœºæ•°æˆåŠŸï¼" << endl;
+    //system("pause");
+    //2ã€ç³»ç»Ÿåˆ›å»º.txtæ–‡ä»¶å‚¨å­˜éšæœºæ•°
+    system("attrib -h -s -r Num-By-Guess.txt");
+    system("del Num-By-Guess.txt");
+    system("echo xxx>./Num-By-Guess.txt");
+    //cout << "åˆ›å»ºæ–‡ä»¶æˆåŠŸï¼" << endl;
+    //system("pause");
     fstream f;
-	f.open("Num.txt",ios::out);
-	//ÊäÈëÄãÏëĞ´ÈëµÄÄÚÈİ 
+	f.open("Num-By-Guess.txt",ios::out);
+	//è¾“å…¥ä½ æƒ³å†™å…¥çš„å†…å®¹ 
 	f<< numR <<endl;
 	f.close();
-//    system("attrib +h +s +r Num.txt");
+    //cout << "å†™å…¥æ•°æ®æˆåŠŸï¼" << endl;
+    //system("pause");
+    system("attrib +h +s +r Num-By-Guess.txt");
 }
