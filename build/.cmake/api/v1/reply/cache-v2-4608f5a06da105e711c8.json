@@ -675,7 +675,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "main"
+			"value" : "Elder"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1028,6 +1028,42 @@
 			],
 			"type" : "PATH",
 			"value" : ""
+		},
+		{
+			"name" : "Elder_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Guess-Elder/build"
+		},
+		{
+			"name" : "Elder_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Elder_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Guess-Elder"
 		},
 		{
 			"name" : "LIBRARY_OUTPUT_PATH",

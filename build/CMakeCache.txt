@@ -116,7 +116,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=main
+CMAKE_PROJECT_NAME:STATIC=Elder
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=E:/Windows Kits/10/bin/10.0.22000.0/x64/rc.exe
@@ -191,6 +191,15 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Single output directory for building all executables.
 EXECUTABLE_OUTPUT_PATH:PATH=
+
+//Value Computed by CMake
+Elder_BINARY_DIR:STATIC=E:/Guess-Elder/build
+
+//Value Computed by CMake
+Elder_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Elder_SOURCE_DIR:STATIC=E:/Guess-Elder
 
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=

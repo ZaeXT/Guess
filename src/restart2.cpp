@@ -25,7 +25,7 @@ void restart2()
     cout << "玩家只有10次猜测机会" << endl;
     cout << "机会用完后游戏结束" << endl;
     cout << "您能否在有限的次数内猜出正确答案呢？" << endl;
-    cout << "输入 START 开始游戏" << endl;
+    cout << "输入 START 开始游戏 By ZaeXT" << endl;
     string start = "YES";
     cin >> start;
     if (start == "START")
