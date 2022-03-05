@@ -1,4 +1,4 @@
-project(main)
+project(Guess)
 
 aux_source_directory(./src SRCS)
 

@@ -675,7 +675,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "main"
+			"value" : "Guess"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1028,6 +1028,42 @@
 			],
 			"type" : "PATH",
 			"value" : ""
+		},
+		{
+			"name" : "Guess_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Guess-Main/build"
+		},
+		{
+			"name" : "Guess_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Guess_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Guess-Main"
 		},
 		{
 			"name" : "LIBRARY_OUTPUT_PATH",
