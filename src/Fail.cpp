@@ -11,7 +11,7 @@ void Fail()
     cin >> choice;
     if (choice == "RESTART")
     {
-        int main();
+        main();
     }
     else if (choice == "END")
     {

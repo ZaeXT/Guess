@@ -18,6 +18,7 @@ START:
     //cout << num << endl;
     // 2、玩家进行猜测
     Start_Text();
+    //cout << num << endl;
     string start = "YES";
 STARTF:
     cin >> start;
@@ -27,7 +28,7 @@ STARTF:
         system("cls");
         While(num);
         cout << "挑战失败.输入 RESTART 重试或 END 退出" << endl;
-        void Fail();
+        Fail();
     }
     else if(start == "HelpMore")
     {

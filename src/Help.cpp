@@ -9,6 +9,7 @@ void Help(int num)
     srand((unsigned int)time(NULL));
 
     int var = rand() % 10; //生成 0 + 1 ~ 99 + 1 随机数
+    //var = 7;
 
     int val;
 
@@ -76,8 +77,10 @@ void Help(int num)
         cout << "Σ(っ °Д °;)っ\n";
         cout << "你竟然运气这么好！\n"
              << "不行，再来一次！！！" << endl;
+        cin.get();
+        cin.get();
         system("cls");
-        int main();
+        main();
     }
     else
     {
