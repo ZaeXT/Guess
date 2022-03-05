@@ -1,3 +1,0 @@
-E:/Guess-Main/build/CMakeFiles/Guess.dir
-E:/Guess-Main/build/CMakeFiles/ALL_BUILD.dir
-E:/Guess-Main/build/CMakeFiles/ZERO_CHECK.dir
