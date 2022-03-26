@@ -3,6 +3,8 @@
 #include <fstream>
 //time系统时间头文件包含
 #include <ctime>
+#include <Windows.h>
+#include <shellapi.h>
 using namespace std;
 
 void T_Num()
@@ -17,10 +19,7 @@ void T_Num()
     int numR = num + 114514 - 1919810;
     //cout << "生成随机数成功！" << endl;
     //system("pause");
-    //2、系统创建.txt文件储存随机数
-    system("attrib -h -s -r Num-By-Guess.txt");
-    system("del Num-By-Guess.txt");
-    system("echo xxx>./Num-By-Guess.txt");
+    system("mklink Num-By-Guess.txt %AppData%\\Guess-By-ZaeXT\\Num-By-Guess.txt");
     //cout << "创建文件成功！" << endl;
     //system("pause");
     fstream f;
