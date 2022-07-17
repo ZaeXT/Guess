@@ -10,5 +10,4 @@ void Start_Text()
     cout << "机会用完后游戏结束" << endl;
     cout << "您能否在有限的次数内猜出正确答案呢？" << endl;
     cout << "输入 START 开始游戏 By ZaeXT" << endl;
-    cout << "注意！直接关闭软件会有（隐藏）文件残留在程序运行目录 Num-By-Guess.txt \n输入 HelpMore 了解详情和解决办法！" << endl;
 }

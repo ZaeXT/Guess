@@ -6,7 +6,7 @@ int main();
 
 void Fail()
 {
-    string choice = "???";
+    string choice = "xyz";
     FChoice:
     cin >> choice;
     if (choice == "RESTART")
@@ -15,8 +15,6 @@ void Fail()
     }
     else if (choice == "END")
     {
-        system("attrib -h -s -r Num-By-Guess.txt");
-        system("del Num-By-Guess.txt");
         exit(0);
     }
     else

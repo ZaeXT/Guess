@@ -1,17 +1,28 @@
 #include <iostream>
 #include <Windows.h>
-#include <stdio.h>
+#include <stdlib.h>
 using namespace std;
 
-void Help(int num);
+void Help(long numT);
 
 int main();
 
 void Fail();
 
-int While(int num)
+long T_Num(long numC);
+
+long WhileM(long num)
 {
-    int val = 0;    //玩家输入的数字
+    int numTS = T_Num(1);   //加密数获取
+    int pmp = T_Num(2);     //+ - 运算获取
+    int *numT;
+    if (pmp == 0)
+    {
+        int numTT = num - numTS;
+        int *numTST = &numTT;
+        *numT = *numTST;
+    }
+    int val = 0;            //玩家输入的数字
     int t = 0;
     while (t < 10)
     {
@@ -20,7 +31,7 @@ int While(int num)
         cin >> val;
         if(cin.good())
         {
-            goto RSTART;
+            goto START;
         }
         else
         {
@@ -38,17 +49,17 @@ int While(int num)
             exit(0);
             system("taskkill /f /im Guess.exe");
         }
-RSTART:
+START:
         // 3、判断玩家的猜测
-        if (val > num)
+        if (val > *numT)
         {
             cout << "猜测过大" << endl;
         }
-        else if (val < num)
+        else if (val < *numT)
         {
             cout << "猜测过小" << endl;
         }
-        else if (val == num)
+        else if (val == *numT)
         {
             cout << "恭喜您猜对了!" << endl;
 
@@ -57,7 +68,7 @@ RSTART:
             system("cls");
 
             cout << "您可以输入 RESTART 重新开始游戏或 END 结束游戏！" << endl;
-            string choice = "???";
+            string choice = "abc";
             FChoice:
             cin >> choice;
             if (choice == "RESTART")
@@ -66,8 +77,6 @@ RSTART:
             }
             else if (choice == "END")
             {
-                system("attrib -h -s -r Num-By-Guess.txt");
-                system("del Num-By-Guess.txt");
                 exit(0);
             }
             else
@@ -88,7 +97,7 @@ RSTART:
         {
             if (val == 114514)
             {
-                Help(num);
+                Help(*numT);
             }
         }
     }

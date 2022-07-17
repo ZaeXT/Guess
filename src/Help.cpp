@@ -4,8 +4,9 @@ using namespace std;
 
 int main();
 
-void Help(int num)
+void Help(int numT)
 {
+
     srand((unsigned int)time(NULL));
 
     int var = rand() % 10; //生成 0 + 1 ~ 99 + 1 随机数
@@ -13,7 +14,7 @@ void Help(int num)
 
     int val;
 
-    val = num / 10 % 10;
+    val = numT / 10 % 10;
 
     if ( var == 0 )
     {
@@ -58,7 +59,7 @@ void Help(int num)
     }
     else if (var == 5)
     {
-        if (num > 50)
+        if (numT > 50)
         {
             cout << "这个数大于50" << endl;
         }
@@ -73,7 +74,7 @@ void Help(int num)
     }
     else if(var == 7)
     {
-        cout << "这个数是" << num << endl;
+        cout << "这个数是" << numT << endl;
         cout << "Σ(っ °Д °;)っ\n";
         cout << "你竟然运气这么好！\n"
              << "不行，再来一次！！！" << endl;
