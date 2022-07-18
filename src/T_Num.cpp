@@ -1,5 +1,6 @@
 // time系统时间头文件包含
 #include <ctime>
+// rand函数头文件包含
 #include <stdlib.h>
 using namespace std;
 int T_Num()
@@ -8,5 +9,5 @@ int T_Num()
     srand((unsigned int)time(NULL));
     //系统生成随机数
     int num = rand() % 100 + 1; //生成 0 + 1 ~ 99 + 1 随机数
-    return (num);
+    return (num);               //返回随机数
 }

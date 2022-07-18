@@ -6,12 +6,12 @@ int main();
 
 void Fail()
 {
-    string choice = "xyz";
-    FChoice:
+    string choice = "xyz";  //初始化选择值
+FChoice:                    //输入错误跳转用
     cin >> choice;
     if (choice == "RESTART")
     {
-        main();
+        main();             //调用主函数体重开
     }
     else if (choice == "END")
     {
@@ -20,6 +20,6 @@ void Fail()
     else
     {
         cout << "输入错误！请重新输入！" << endl;
-        goto FChoice;
+        goto FChoice;       //输入错误跳转用
     }
 }

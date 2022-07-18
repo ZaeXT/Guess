@@ -6,16 +6,16 @@ int main();
 
 void Help(int num)
 {
-
+    //添加随机数种子，生成提示用
     srand((unsigned int)time(NULL));
 
-    int var = rand() % 10; //生成 0 + 1 ~ 99 + 1 随机数
+    int var = rand() % 10;  //生成 10 个随机数
     // var = 7;
 
-    int val;
+    int val;                //提示用，初始化提示值
 
-    val = num / 10 % 10;
-
+    val = num / 10 % 10;    //提示用，计算随机数范围
+                            //提示选择体
     if (var == 0)
     {
         cout << "这个数在 0 + 1 到 99 + 1 的范围内（废话\n";
@@ -82,6 +82,10 @@ void Help(int num)
         cin.get();
         system("cls");
         main();
+    }
+    else if (var == 8)
+    {
+        cout << "这是个整数（废话" << endl;
     }
     else
     {
