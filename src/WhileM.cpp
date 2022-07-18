@@ -2,7 +2,7 @@
 #include <Windows.h>
 #include <stdlib.h>
 using namespace std;
-
+extern int numT;
 void Help(long numT);
 
 int main();
@@ -15,12 +15,13 @@ long WhileM(long num)
 {
     int numTS = T_Num(1);   //加密数获取
     int pmp = T_Num(2);     //+ - 运算获取
-    int *numT;
     if (pmp == 0)
     {
-        int numTT = num - numTS;
-        int *numTST = &numTT;
-        *numT = *numTST;
+        numT = num - numTS;
+    }
+    else
+    {
+        numT = num + numTS;
     }
     int val = 0;            //玩家输入的数字
     int t = 0;
@@ -51,15 +52,15 @@ long WhileM(long num)
         }
 START:
         // 3、判断玩家的猜测
-        if (val > *numT)
+        if (val > numT)
         {
             cout << "猜测过大" << endl;
         }
-        else if (val < *numT)
+        else if (val < numT)
         {
             cout << "猜测过小" << endl;
         }
-        else if (val == *numT)
+        else if (val == numT)
         {
             cout << "恭喜您猜对了!" << endl;
 
@@ -97,7 +98,7 @@ START:
         {
             if (val == 114514)
             {
-                Help(*numT);
+                Help(numT);
             }
         }
     }
