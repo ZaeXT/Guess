@@ -9,5 +9,4 @@ This is a Project By **ZaeXT**.It is a simple C++ project.
 学会**Class**用法后重新coding的***Guess***
 
 ## 思维导图
-![Alt text](./CuessWithClass.svg)
-<img src="./CuessWithClass.svg">
+![Alt text](./GuessWithClass.svg)
